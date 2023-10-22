@@ -7,8 +7,8 @@ public record DateRange
         
     }
     
-    private DateOnly Start { get; init; }
-    private DateOnly End { get; init; }
+    public DateOnly Start { get; init; }
+    public DateOnly End { get; init; }
     
     public int LengthInDays => End.DayNumber - Start.DayNumber;
 
